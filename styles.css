@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Paytone+One&display=swap');
 
 * {
   margin: 0;
@@ -16,7 +17,7 @@
     text-decoration: none;
   }
 
-  .logo {
+  .logo-link {
     display: none;
   }
 
@@ -34,16 +35,123 @@
 
   #header {
     height: 60px;
-    width: 90%;
+    width: 95%;
     margin: 0 auto;
     font-family: 'Lato', sans-serif;
   }
 
-  .uil-bars{
-    font-size: 3rem;
+  .uil-bars {
+    font-size: 3.5rem;
     color: rgb(100, 97, 97);
   }
+  
+  .background-container {
+    height: 470px;
+    background-image: url('');
+    background-color: #f0eded;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  #home {
+    width: 95%;
+    margin: 0 auto;
+    margin-top: 40px;
+  }
+
+  .first-description .hello {
+    color: #ec5242;
+    font-size: 1.3em;
+  }
+
+  .first-description .creative {
+    font-size: 2.55em;
+    font-weight: 900;
+    font-family: 'Paytone One', sans-serif;
+    line-height: 34px;
+    background-image: url('img/lines.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  .second-description .paragraf{
+    margin-top: 30px;
+    font-size: 0.8em;
+    border: 3px solid #fff;
+    padding: 12px 10px;
+    text-align: justify;
+  }
+
+  .three-description .date {
+    margin-top: 20px;
+    font-family: 'Paytone One', sans-serif;
+    color: rgb(100, 97, 97);
+    font-size: 1.5em;
+  }
+
+  .three-description .adrees {
+    margin-top: 10px;
+    font-size: 0.85em;
+  }
+
+  .icons-bottom {
+    height: 70px;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .x-square {
+    position: relative;
+    right: 50px;
+    top: 15px;
+  }
+
+  .x-icon {
+    font-size: 50px;
+    position: absolute;
+    opacity: 0.1;
+  }
+
+  .square-icon {
+    position: absolute;
+    left: 11px;
+    top: 17px;
+    color: rgb(206, 204, 204);
+  }
+
+  .dolar-circle {
+    position: relative;
+    top: 8px;
+    left: 34px;
+    opacity: 0.2;
+  }
+
+  .dolar-icon {
+    position: absolute;
+    font-size: 30px;
+    left: 13px;
+    top: 7px;
+    opacity: 0.25;
+  }
+
+  .circle-icon {
+    font-size: 30px;
+    position: absolute;
+    font-size: 45px;
+    opacity: 0.3;
+  }
+
+  .main-program {
+    background-color: rgb(73, 71, 71);
+    height: 600px;
+  }
 }
+
+/* DESKTOP VERSION */
 
 @media screen and (min-width: 768px) {
   .uil-bars {
@@ -52,7 +160,7 @@
 
   #header {
     width: 100%;
-    display: flex;
+    display: grid;
     flex-direction: column;
   }
 
@@ -63,9 +171,9 @@
   .list-container-one {
     display: flex;
     justify-content: flex-end;
+    padding-right: 180px;
     align-items: center;
     gap: 1rem;
-    padding-right: 190px;
     height: 35px;
   }
 
@@ -92,13 +200,18 @@
     background-color: #fff;
     display: flex;
     align-items: center;
-    box-shadow: 0 0 2px 0;
+    box-shadow: 0 0 1px 0;
   }
 
-  .logo {
+  .logo-link {
     width: 40%;
     text-align: center;
     display: block;
+    padding-left: 10px;
+  }
+
+  .logo-link .logo-img {
+    width: 22%;
   }
 
   .nav-container {
@@ -123,17 +236,55 @@
   }
 
   .btn-CC {
-    border: 5px solid rgb(202, 29, 29);
+    border: 5px solid #ec5242;
     background: none;
     display: flex;
     padding: 12px 15px;
-    color: rgb(202, 29, 29);
+    color: #ec5242;
     cursor: pointer;
     font-weight: 600;
   }
 
   .btn-CC:hover {
-    background-color: rgb(209, 114, 114);
+    background-color: #ec5242;
     color: #fff;
+  }
+
+  .background-container {
+    height: 760px;
+  }
+
+  #home {
+    width: 75%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 55px;
+  }
+
+  .first-description {
+    padding-top: 110px;
+  }
+
+  .first-description .hello {
+    font-size: 2.8em;
+  }
+
+  .first-description .creative {
+    font-size: 5em;
+    width: 60%;
+    line-height: 80px;
+  }
+
+  .second-description .paragraf {
+    width: 50%;
+  }
+
+  .three-description .date {
+    font-size: 2em;
+  }
+
+  .three-description .adrees {
+    font-size: 1.2em;
   }
 }
