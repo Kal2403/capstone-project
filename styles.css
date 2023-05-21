@@ -17,7 +17,7 @@
     text-decoration: none;
   }
 
-  .logo-link {
+  .logo-link .logo-img {
     display: none;
   }
 
@@ -62,14 +62,14 @@
 
   .first-description .hello {
     color: #ec5242;
-    font-size: 1.3em;
+    font-size: 1.4em;
   }
 
   .first-description .creative {
     font-size: 2.55em;
     font-weight: 900;
     font-family: 'Paytone One', sans-serif;
-    line-height: 34px;
+    line-height: 38px;
     background-image: url('img/lines.png');
     background-repeat: no-repeat;
     background-size: cover;
@@ -82,7 +82,7 @@
     margin-top: 30px;
     font-size: 0.8em;
     border: 3px solid #fff;
-    padding: 12px 10px;
+    padding: 12px;
     text-align: justify;
   }
 
@@ -147,7 +147,81 @@
 
   .main-program {
     background-color: rgb(73, 71, 71);
-    height: 600px;
+    height: 750px;
+    padding-top: 30px;
+  }
+
+  .main-program h2 {
+    text-align: center;
+    color: #fff;
+  }
+
+  .main-program .line {
+    color: #ec5242;
+  }
+
+  .cards {
+    width: 95%;
+    margin: 0 auto;
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 15px;
+  }
+
+  .card {
+    background-color: #ffffff25;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    height: 90px;
+    padding: 0 8px 0 5px; 
+  }
+
+  .card i {
+    font-size: 40px;
+    color: #fff;
+    width: 15%;
+    text-align: center;
+  }
+
+  .card h4 {
+    font-family: 0.9rem;
+    width: 25%;
+    height: 25%;
+    color: #ec5242;
+    text-align: center;
+  }
+
+  .card p {
+    font-size: 0.8rem;
+    width: 65%;
+    height: 70%;
+    color: #fff;
+    text-align: justify;
+  }
+
+  .btn-container {
+    display: flex;
+    justify-content: center;
+    height: 100px;
+  }
+
+  .btn-program {
+    width: 80%;
+    padding: 15px;
+    margin: auto 0;
+    font-size: 24px;
+    font-weight: 600;
+    color: #fff;
+    background-color: #ec5242;
+    border: none;
+    cursor: pointer;
+  }
+
+  .btn-program:hover {
+    background-color: #ec5342ea;
   }
 }
 
@@ -211,6 +285,7 @@
   }
 
   .logo-link .logo-img {
+    display: inline;
     width: 22%;
   }
 
@@ -286,5 +361,57 @@
 
   .three-description .adrees {
     font-size: 1.2em;
+  }
+
+  .main-program {
+    height: 600px;
+  }
+
+  .main-program h2 {
+    font-size: 2rem;
+  }
+
+  .main-program .line {
+    color: #ec5242;
+  }
+
+  .cards {
+    grid-template-columns: repeat(5, 1fr);
+    gap: 5px;
+    width: 70%;
+    height: 45%;
+  }
+
+  .card {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+
+  .card:hover {
+    border: 1px solid #fff;
+  }
+
+  .card i {
+    width: 50%;
+    height: 20%;
+  }
+
+  .card h4 {
+    width: 50%;
+    height: 10%;
+  }
+
+  .card p {
+    width: 90%;
+    height: 40%;
+  }
+
+  .btn-container {
+    width: 20%;
+    margin: 40px auto 0 auto;
+    justify-content: center;
+    align-items: center;
   }
 }
