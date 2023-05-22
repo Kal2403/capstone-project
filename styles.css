@@ -303,6 +303,10 @@
   .hideCard {
     display: none;
   }
+
+  footer {
+    display: none;
+  }
 }
 
 /* DESKTOP VERSION */
@@ -533,5 +537,89 @@
 
   .hideButton {
     display: none;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+  }
+
+  .partners {
+    height: 50%;
+    background: #272a31;
+  }
+  
+  .partners .line {
+    width: 5%;
+    height: 1px;
+    background-color: #ec5242;
+    margin: 20px auto 0 auto;
+  }
+
+  .partners h2 {
+    color: #d3d3d3c0;
+    text-align: center;
+    font-size: 2em;
+    height: 70px;
+    padding-top: 30px;
+  }
+
+  .part-container {
+    display: flex;
+    gap: 70px;
+    margin: 50px auto;
+    width: 75%;
+  }
+
+  .part-container img {
+    width: 12%;
+    height: 50px;
+  }
+
+  .part-container p {
+    font-size: 2.8em;
+    font-weight: 600;
+    color: #d3d3d3c0;
+  }
+
+  .airbnb {
+    display: flex;
+    gap: 5px;
+    width: 20%;
+  }
+
+  .airbnb i {
+    font-size: 2.8em;
+    color: #d3d3d3c0;
+  }
+
+  .adress-container {
+    height: 50%;
+    display: flex;
+    align-items: center;
+  }
+
+  .adress {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    width: 70%;
+    height: 50%;
+  }
+
+  .adress img {
+    width: 70%;
+  }
+
+  .right {
+    font-size: 1.1em;
+  }
+  .right p:nth-child(1) {
+    font-weight: 600;
+  }
+
+  .right p:nth-child(2) {
+    margin-top: 20px;
   }
 }
