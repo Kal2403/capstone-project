@@ -145,18 +145,18 @@
     opacity: 0.3;
   }
 
-  .main-program {
+  #main-program {
     background-color: rgb(73, 71, 71);
     height: 750px;
     padding-top: 30px;
   }
 
-  .main-program h2 {
+  #main-program h2 {
     text-align: center;
     color: #fff;
   }
 
-  .main-program .line {
+  #main-program .line {
     color: #ec5242;
   }
 
@@ -222,6 +222,86 @@
 
   .btn-program:hover {
     background-color: #ec5342ea;
+  }
+
+  #speakers {
+    background-color: #fff;
+    height: 550px;
+  }
+
+  #speakers h2 {
+    text-align: center;
+    margin: 20px;
+  }
+
+  .line2 {
+    width: 10%;
+    background-color: #ec5242;
+    height: 1px;
+    margin: 0 auto;
+  }
+
+  .speakContainer {
+    width: 95%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .speakCard {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 150px;
+  }
+
+  .speakCard .imgCard {
+    width: 25%;
+    height: 78%;
+    margin: 0 auto;
+  }
+
+  .descriptionCard {
+    width: 70%;
+    height: 78%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .descriptionCard .line {
+    width: 10%;
+    height: 1px;
+    background-color: #d3d3d3;
+  }
+
+  .descriptionCard h4 {
+    font-size: 1.1rem;
+    font-weight: 600;
+  }
+
+  .descriptionCard p {
+    font-size: 0.7rem;
+    text-align: justify;
+    font-weight: 550;
+  }
+
+  .descriptionCard p:nth-child(2) {
+    color: #ec5242;
+  }
+
+  .hideButton {
+    height: 40px;
+    font-size: 1.1rem;
+    background-color: #fff;
+    color: #000;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    margin-top: 30px;
+  }
+
+  .hideCard {
+    display: none;
   }
 }
 
@@ -363,15 +443,15 @@
     font-size: 1.2em;
   }
 
-  .main-program {
+  #main-program {
     height: 600px;
   }
 
-  .main-program h2 {
+  #main-program h2 {
     font-size: 2rem;
   }
 
-  .main-program .line {
+  #main-program .line {
     color: #ec5242;
   }
 
@@ -413,5 +493,45 @@
     margin: 40px auto 0 auto;
     justify-content: center;
     align-items: center;
+  }
+
+  #speakers {
+    height: 750px;
+  }
+
+  #speakers h2 {
+    font-size: 1.8em;
+    margin-top: 50px;
+  }
+
+  .line2 {
+    width: 3%;
+  }
+
+  .speakContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 10px;
+    width: 65%;
+    height: 80%;
+    margin-top: 30px;
+  }
+
+  .speakCard, .hideCard {
+    width: 100%;
+    display: flex;
+  }
+
+  .speakCard .imgCard {
+    height: 95%;
+  }
+
+  .descriptionCard p {
+    height: 40%;
+  }
+
+  .hideButton {
+    display: none;
   }
 }
