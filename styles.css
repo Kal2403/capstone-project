@@ -69,12 +69,16 @@
     font-weight: 900;
     font-family: 'Paytone One', sans-serif;
     line-height: 38px;
-    background-image: url('img/lines.png');
+    background-image: url('img/lines.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
+  }
+
+  .second-description {
+    z-index: 100;
   }
 
   .second-description .paragraf{
@@ -145,9 +149,10 @@
   }
 
   #main-program {
-    background-color: rgb(73, 71, 71);
     height: 750px;
     padding-top: 30px;
+    background-image: url('img/main-program.png');
+    background-color: #272a31;
   }
 
   #main-program h2 {
@@ -169,13 +174,13 @@
   }
 
   .card {
-    background-color: #ffffff25;
+    background-color: #0000002f;
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 10px;
     height: 90px;
-    padding: 0 8px 0 5px; 
+    padding: 0 8px 0 5px;
   }
 
   .card i {
@@ -328,7 +333,7 @@
   .list-container-one {
     display: flex;
     justify-content: flex-end;
-    padding-right: 180px;
+    padding-right: 190px;
     align-items: center;
     gap: 1rem;
     height: 35px;
@@ -410,6 +415,9 @@
 
   .background-container {
     height: 760px;
+    background-image: url('img/home-desktop.png');
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 
   #home {
@@ -418,6 +426,7 @@
     display: flex;
     flex-direction: column;
     padding-left: 55px;
+    
   }
 
   .first-description {

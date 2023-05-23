@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Paytone+One&display=swap');
 
 @media screen and (min-width: 375px) {
   .first-description {
@@ -222,7 +221,7 @@
   }
 
   .creative-container img {
-    width: 30%;
+    width: 25%;
   }
 
   #seepast {
