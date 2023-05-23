@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Paytone+One&display=swap');
+
+@media screen and (min-width: 375px) {
+  .first-description {
+    text-align: center;
+  }
+
+  .second-description .paragraf {
+    text-align: center;
+    background-color: #fff;
+  }
+
+  .three-description {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.8em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .three-description p {
+    width: 90%;
+    height: 40px;
+  }
+
+  .three-description a {
+    text-decoration: underline;
+    color: black;
+    font-weight: 600;
+  }
+
+  #creative-logo {
+    height: 400px;
+    border-bottom: 1px solid #d3d3d3;
+  }
+
+  .creative-container {
+    width: 90%;
+    height: 95%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .creative-container h2 {
+    font-size: 1.3em;
+  }
+
+  .line {
+    width: 10%;
+    height: 2px;
+    background-color: #ec5242;
+    margin: 10px auto;
+  }
+
+  .creative-container p {
+    margin-top: 5px;
+    width: 90%;
+  }
+
+  .creative-container img {
+    border: 1px solid #d3d3d3;
+    height: 50%;
+    width: 60%;
+    margin-top: 10px;
+  }
+
+  #seepast {
+    padding-top: 20px;
+    height: 550px;
+  }
+
+  .seepast-container {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .past-img {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+
+  .past-img img {
+    width: 100%;
+    margin-top: 15px
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    height: 350px;
+    margin-top: 30px;
+  }
+
+  .partners {
+    height: 70%;
+    background-color: #272a31;
+    color: #d3d3d3d3;
+    text-align: center;
+  }
+
+  .partners h2 {
+    margin-top: 10px;
+  }
+
+  .part1 {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 2em;
+    font-weight: 600;
+    margin-top: 20px;
+  }
+
+  .airbnb {
+    display: flex;
+    gap: 5px;
+  }
+
+  .adress-container {
+    height: 30%
+  }
+
+  .adress {
+    display: flex;
+    justify-content: space-evenly;
+    
+  }
+
+  .adress a {
+    width: 30%;
+    height: 80%;
+  }
+
+  .adress a img {
+    width: 100%;
+  }
+
+  .adress p {
+    font-size: 0.9em;
+    text-align: center;
+    display: flex;
+    align-items: center;
+  }
+
+  .desktop-img {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 718px) {
+  .background-container {
+    background-image: url('img/about1-2.png');
+    background-size: contain;
+    background-position: 100%;
+    background-color: #d3d3d379;
+  }
+
+  .first-description {
+    padding-top: 20px;
+    margin-top: 80px;
+    text-align: center;
+  }
+
+  .first-description p {
+    display: none;
+  }
+
+  .first-description .creative {
+    width: 100%;
+  }
+
+  .second-description{
+    text-align: center;
+    
+  }
+
+  .second-description .paragraf {
+    border: 1px solid #d3d3d3;
+    width: 100%;
+    height: 100%;
+    font-size: 1.2em;
+    padding: 20px;
+    background-color: #fff;
+  }
+
+  .three-description p{
+    margin-top: 50px;
+    font-size: 1.2em;
+  }
+
+  .three-description a {
+    font-size: 1.2em;
+  }
+
+  #creative-logo {
+    border: 1px solid #d3d3d3;
+    height: 600px;
+  }
+
+  .creative-container {
+    font-size: 1.2em;
+  }
+
+  .line {
+    width: 3%;
+  }
+
+  .creative-container p:nth-child(5) {
+    margin: 20px 0 30px 0;
+  }
+
+  .creative-container img {
+    width: 30%;
+  }
+
+  #seepast {
+    height: 500px;
+  }
+
+  .seepast-container {
+    font-size: 1.2em;
+    height: 95%;
+  }
+
+  .past-img {
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    width: 80%;
+  }
+
+  .past-img img {
+    width: 40%;
+  }
+
+  .partners {
+    display: none;
+  }
+
+  footer {
+    height: 200px;
+  }
+
+  .adress-container {
+    background-color: #272a31;
+    height: 100%;
+  }
+
+  .adress {
+    color: #fff;
+    font-size: 1.6em;
+  }
+
+  .adress .mobile-img {
+    display: none;
+  }
+
+  .desktop-img {
+    display: block;
+  }
+
+  .adress a img {
+    width: 50%;
+  }
+}
