@@ -96,7 +96,8 @@ dataSpeakers.map((dataSpeak, i) => {
   if (i > 1 && i < 6) {
     speakCard.classList.add('hideCard');
   }
-})
+  return dataSpeak
+});
 
 const hideButton = document.createElement('button');
 hideButton.classList.add('hideButton');
