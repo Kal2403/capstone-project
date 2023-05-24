@@ -63,9 +63,7 @@ const speakContainer = document.createElement('div');
 speakContainer.classList.add('speakContainer');
 sectionSpeakers.appendChild(speakContainer);
 
-for (let i = 0; i < dataSpeakers.length; i += 1) {
-  const dataSpeak = dataSpeakers[i];
-
+dataSpeakers.map((dataSpeak, i) => {
   const speakCard = document.createElement('div');
   speakCard.classList.add('speakCard');
   speakContainer.appendChild(speakCard);
@@ -98,7 +96,7 @@ for (let i = 0; i < dataSpeakers.length; i += 1) {
   if (i > 1 && i < 6) {
     speakCard.classList.add('hideCard');
   }
-}
+})
 
 const hideButton = document.createElement('button');
 hideButton.classList.add('hideButton');

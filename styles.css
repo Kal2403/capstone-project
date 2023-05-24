@@ -106,6 +106,7 @@
   .first-description .hello {
     color: #ec5242;
     font-size: 1.4em;
+    font-weight: 400;
   }
 
   .creative {
@@ -221,7 +222,7 @@
   }
 
   .card {
-    background-color: #0000002f;
+    background-color: rgba(128, 128, 128, 0.3);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -489,7 +490,7 @@
 
   .first-description .creative {
     font-size: 5em;
-    width: 60%;
+    width: 100%;
     line-height: 80px;
   }
 
@@ -506,7 +507,7 @@
   }
 
   #main-program {
-    height: 600px;
+    height: 650px;
   }
 
   .partners h2 {
@@ -515,10 +516,12 @@
     font-size: 2em;
     height: 70px;
     padding-top: 30px;
+
   }
 
-  #main-program h2 {
+  #main-program .title-program {
     font-size: 2rem;
+    margin-top: 40px;
   }
 
   .partners .line {
@@ -537,6 +540,7 @@
     gap: 5px;
     width: 70%;
     height: 45%;
+    margin-top: 60px;
   }
 
   .card {
