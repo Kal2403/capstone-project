@@ -1,0 +1,678 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Paytone+One&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+}
+
+:root {
+  --textback: text;
+}
+
+@media screen and (min-width: 375px) {
+  li {
+    list-style: none;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  .logo-img {
+    display: none;
+  }
+
+  #nav {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #d3d3d3d3;
+  }
+
+  .btn {
+    float: right;
+    width: 50px;
+    height: 40px;
+    margin: 10px 10px 0 0;
+    background: none;
+    border: none;
+    font-size: 1.5em;
+  }
+
+  .list-container-two {
+    height: 60%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 50px;
+  }
+
+  .list-container-two li a {
+    color: #ec5242;
+    font-weight: 600;
+    font-size: 1.7em;
+  }
+
+  .list-container-one {
+    display: none;
+  }
+
+  .btn-CC {
+    display: none;
+  }
+
+  #header {
+    height: 60px;
+    width: 95%;
+    margin: 0 auto;
+    font-family: 'Lato', sans-serif;
+  }
+
+  .btn-open {
+    background: none;
+    border: none;
+  }
+
+  .uil-bars {
+    font-size: 3.5rem;
+    color: rgb(100, 97, 97);
+  }
+
+  .background-container {
+    height: 470px;
+    background-image: url('img/home-mobile.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .bottom-header-desktop {
+    display: none;
+  }
+
+  #home {
+    width: 95%;
+    margin: 0 auto;
+    margin-top: 40px;
+  }
+
+  .first-description .hello {
+    color: #ec5242;
+    font-size: 1.4em;
+    font-weight: 400;
+  }
+
+  .creative {
+    font-size: 2.55em;
+    font-weight: 900;
+    font-family: 'Paytone One', sans-serif;
+    line-height: 38px;
+    color: #ec5242;
+    background: url('img/lines.jpg');
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .second-description {
+    z-index: 100;
+  }
+
+  .second-description .paragraf {
+    margin-top: 30px;
+    font-size: 0.8em;
+    border: 3px solid #fff;
+    padding: 12px;
+    text-align: justify;
+  }
+
+  .three-description .date {
+    margin-top: 20px;
+    font-family: 'Paytone One', sans-serif;
+    color: rgb(100, 97, 97);
+    font-size: 1.5em;
+  }
+
+  .three-description .adrees {
+    margin-top: 10px;
+    font-size: 0.85em;
+  }
+
+  .icons-bottom {
+    height: 70px;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .x-square {
+    position: relative;
+    right: 50px;
+    top: 15px;
+  }
+
+  .x-icon {
+    font-size: 50px;
+    position: absolute;
+    opacity: 0.1;
+  }
+
+  .square-icon {
+    position: absolute;
+    left: 11px;
+    top: 17px;
+    color: rgb(206, 204, 204);
+  }
+
+  .dolar-circle {
+    position: relative;
+    top: 8px;
+    left: 34px;
+    opacity: 0.2;
+  }
+
+  .dolar-icon {
+    position: absolute;
+    font-size: 30px;
+    left: 13px;
+    top: 7px;
+    opacity: 0.25;
+  }
+
+  .circle-icon {
+    position: absolute;
+    font-size: 45px;
+    opacity: 0.3;
+  }
+
+  #main-program {
+    height: 750px;
+    padding-top: 30px;
+    background-image: url('img/main-program.png');
+    background-color: #272a31;
+  }
+
+  #main-program h2 {
+    text-align: center;
+    color: #fff;
+  }
+
+  .descriptionCard .line {
+    width: 10%;
+    height: 1px;
+    background-color: #d3d3d3;
+  }
+
+  #main-program .line {
+    color: #ec5242;
+  }
+
+  .cards {
+    width: 95%;
+    margin: 0 auto;
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 15px;
+  }
+
+  .card {
+    background-color: rgba(128, 128, 128, 0.3);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    height: 90px;
+    padding: 0 8px 0 5px;
+  }
+
+  .card i {
+    font-size: 40px;
+    color: #fff;
+    width: 15%;
+    text-align: center;
+  }
+
+  .card h4 {
+    font-size: 0.9rem;
+    width: 25%;
+    height: 25%;
+    color: #ec5242;
+    text-align: center;
+  }
+
+  .card p {
+    font-size: 0.8rem;
+    width: 65%;
+    height: 70%;
+    color: #fff;
+    text-align: justify;
+  }
+
+  .btn-container {
+    display: flex;
+    justify-content: center;
+    height: 100px;
+  }
+
+  .btn-program {
+    width: 80%;
+    padding: 15px;
+    margin: auto 0;
+    font-size: 24px;
+    font-weight: 600;
+    color: #fff;
+    background-color: #ec5242;
+    border: none;
+    cursor: pointer;
+  }
+
+  .btn-program:hover {
+    background-color: #ec5342ea;
+  }
+
+  #speakers {
+    background-color: #fff;
+    height: 550px;
+  }
+
+  #speakers h2 {
+    text-align: center;
+    margin: 20px;
+  }
+
+  .line2 {
+    width: 10%;
+    background-color: #ec5242;
+    height: 1px;
+    margin: 0 auto;
+  }
+
+  .speakContainer {
+    width: 95%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .speakCard {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 150px;
+  }
+
+  .speakCard .imgCard {
+    width: 25%;
+    height: 78%;
+    margin: 0 auto;
+  }
+
+  .descriptionCard {
+    width: 70%;
+    height: 78%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .descriptionCard h4 {
+    font-size: 1.1rem;
+    font-weight: 600;
+  }
+
+  .descriptionCard p {
+    font-size: 0.7rem;
+    text-align: justify;
+    font-weight: 550;
+  }
+
+  .descriptionCard p:nth-child(2) {
+    color: #ec5242;
+  }
+
+  .hideButton {
+    height: 40px;
+    font-size: 1.1rem;
+    background-color: #fff;
+    color: #000;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    margin-top: 30px;
+  }
+
+  .hideCard {
+    display: none;
+  }
+
+  footer {
+    display: none;
+  }
+}
+
+/* DESKTOP VERSION */
+
+@media screen and (min-width: 768px) {
+  .uil-bars {
+    display: none;
+  }
+
+  #header {
+    width: 100%;
+    display: grid;
+    flex-direction: column;
+  }
+
+  .top-header {
+    background-color: #272a31;
+  }
+
+  .list-container-one {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 190px;
+    align-items: center;
+    gap: 1rem;
+    height: 35px;
+  }
+
+  .list-container-one a {
+    font-size: 1.1rem;
+    color: #fff;
+  }
+
+  .list-container-desktop li a {
+    color: rgb(110, 103, 103);
+    font-weight: 600;
+  }
+
+  .list-container-one a:hover {
+    color: #ffffffd0;
+  }
+
+  .airbnb i {
+    font-size: 2.8em;
+    color: #d3d3d3c0;
+  }
+
+  .card i {
+    width: 50%;
+    height: 20%;
+  }
+
+  .list-container-one li a i {
+    font-size: 1.2rem;
+    color: #fff;
+  }
+
+  .list-container-one li a i:hover {
+    color: #ffffffcb;
+  }
+
+  .bottom-header-desktop {
+    border-bottom: 1px solid rgb(151, 140, 140);
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 0 1px 0;
+  }
+
+  .logo-link {
+    width: 40%;
+    text-align: center;
+    display: block;
+    padding-left: 10px;
+  }
+
+  .logo-link .logo-img {
+    display: inline;
+    width: 22%;
+  }
+
+  .nav {
+    width: 40%;
+  }
+
+  .list-container-desktop {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 70px;
+    color: #000;
+  }
+
+  .list-container-desktop li a:hover {
+    color: rgba(110, 103, 103, 0.658);
+  }
+
+  .btn-CC {
+    border: 5px solid #ec5242;
+    background: none;
+    display: flex;
+    padding: 12px 15px;
+    color: #ec5242;
+    cursor: pointer;
+    font-weight: 600;
+  }
+
+  .btn-CC:hover {
+    background-color: #ec5242;
+    color: #fff;
+  }
+
+  .background-container {
+    height: 760px;
+    background-image: url('img/home-desktop.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  #home {
+    width: 75%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 55px;
+  }
+
+  .first-description {
+    padding-top: 110px;
+  }
+
+  .first-description .hello {
+    font-size: 2.8em;
+  }
+
+  .first-description .creative {
+    font-size: 5em;
+    width: 100%;
+    line-height: 80px;
+  }
+
+  .second-description .paragraf {
+    width: 50%;
+  }
+
+  .three-description .date {
+    font-size: 2em;
+  }
+
+  .three-description .adrees {
+    font-size: 1.2em;
+  }
+
+  #main-program {
+    height: 650px;
+  }
+
+  .partners h2 {
+    color: #d3d3d3c0;
+    text-align: center;
+    font-size: 2em;
+    height: 70px;
+    padding-top: 30px;
+  }
+
+  #main-program .title-program {
+    font-size: 2rem;
+    margin-top: 40px;
+  }
+
+  .partners .line {
+    width: 5%;
+    height: 1px;
+    background-color: #ec5242;
+    margin: 20px auto 0 auto;
+  }
+
+  #main-program .line {
+    color: #ec5242;
+  }
+
+  .cards {
+    grid-template-columns: repeat(5, 1fr);
+    gap: 5px;
+    width: 70%;
+    height: 45%;
+    margin-top: 60px;
+  }
+
+  .card {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+
+  .card:hover {
+    border: 1px solid #fff;
+  }
+
+  .card h4 {
+    width: 50%;
+    height: 10%;
+  }
+
+  .card p {
+    width: 90%;
+    height: 40%;
+  }
+
+  .btn-container {
+    width: 20%;
+    margin: 40px auto 0 auto;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #speakers {
+    height: 750px;
+  }
+
+  #speakers h2 {
+    font-size: 1.8em;
+    margin-top: 50px;
+  }
+
+  .line2 {
+    width: 3%;
+  }
+
+  .speakContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 10px;
+    width: 65%;
+    height: 80%;
+    margin-top: 30px;
+  }
+
+  .speakCard,
+  .hideCard {
+    width: 100%;
+    display: flex;
+  }
+
+  .speakCard .imgCard {
+    height: 95%;
+  }
+
+  .descriptionCard p {
+    height: 40%;
+  }
+
+  .hideButton {
+    display: none;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+  }
+
+  .partners {
+    height: 50%;
+    background: #272a31;
+  }
+
+  .part-container {
+    display: flex;
+    gap: 70px;
+    margin: 50px auto;
+    width: 75%;
+  }
+
+  .part-container img {
+    width: 12%;
+    height: 50px;
+  }
+
+  .part-container p {
+    font-size: 2.8em;
+    font-weight: 600;
+    color: #d3d3d3c0;
+  }
+
+  .airbnb {
+    display: flex;
+    gap: 5px;
+    width: 20%;
+  }
+
+  .adress-container {
+    height: 50%;
+    display: flex;
+    align-items: center;
+  }
+
+  .adress {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    width: 70%;
+    height: 50%;
+  }
+
+  .adress img {
+    width: 70%;
+  }
+
+  .right {
+    font-size: 1.1em;
+  }
+
+  .right p:nth-child(1) {
+    font-weight: 600;
+  }
+
+  .right p:nth-child(2) {
+    margin-top: 20px;
+  }
+}
