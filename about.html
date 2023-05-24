@@ -12,8 +12,8 @@
 </head>
 <body>
   <div class="background-container">
-    <header id="header" class="header-back">
-      <a href="#"><i class="uil uil-bars"></i></a>
+    <header id="header">
+      <button type="button" id="open" class="btn-open" onclick="openMenu()"><i class="uil uil-bars"></i></button>
       <nav class="top-header">
         <ul class="list-container-one">
           <li><a href="#"><i class="uil uil-facebook-f"></i></a></li>
@@ -24,17 +24,29 @@
         </ul>
       </nav>
       <div class="bottom-header">
-        <a class="logo-link" href="index.html"><img class="logo-img" src="img/logo.png"><a />
-          <nav class="nav-container">
-            <ul class="list-container-two">
-              <li><a href="index.html">About</a></li>
-              <li><a href="#">Program</a></li>
-              <li><a href="#">Join</a></li>
-              <li><a href="#">Sponsor</a></li>
-              <li><a href="#">News</a></li>
-            </ul>
-          </nav>
-          <button class="btn-CC">CC Campaign</button>
+        <nav class="nav-container" id="nav">
+          <button type="button" class="btn-close btn" onclick="closeMenu()">X</button>
+          <ul class="list-container-two">
+            <li><a class="close btn-close" href="index.html">Home</a></li>
+            <li><a class="close btn-close" href="#">Program</a></li>
+            <li><a class="close btn-close" href="#">Join</a></li>
+            <li><a class="close btn-close" href="#">Sponsor</a></li>
+            <li><a class="close btn-close" href="#">News</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="bottom-header-desktop">
+        <a class="logo-link" href="index.html"><img class="logo-img" src="img/logo.png"><a/>
+        <nav class="nav">
+          <ul class="list-container-desktop">
+            <li><a class="close btn-close" href="index.html">Home</a></li>
+            <li><a class="close btn-close" href="#">Program</a></li>
+            <li><a class="close btn-close" href="#">Join</a></li>
+            <li><a class="close btn-close" href="#">Sponsor</a></li>
+            <li><a class="close btn-close" href="#">News</a></li>
+          </ul>
+        </nav>
+        <button type="button" class="btn-CC">CC Campaign</button>
       </div>
     </header>
     <section id="home">

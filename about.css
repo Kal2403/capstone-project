@@ -93,7 +93,7 @@
 
   .past-img img {
     width: 100%;
-    margin-top: 15px
+    margin-top: 15px;
   }
 
   footer {
@@ -128,13 +128,12 @@
   }
 
   .adress-container {
-    height: 30%
+    height: 30%;
   }
 
   .adress {
     display: flex;
     justify-content: space-evenly;
-    
   }
 
   .adress a {
@@ -180,9 +179,8 @@
     width: 100%;
   }
 
-  .second-description{
+  .second-description {
     text-align: center;
-    
   }
 
   .second-description .paragraf {
@@ -194,7 +192,7 @@
     background-color: #fff;
   }
 
-  .three-description p{
+  .three-description p {
     margin-top: 50px;
     font-size: 1.2em;
   }
