@@ -8,6 +8,10 @@
   font-family: 'Lato', sans-serif;
 }
 
+:root {
+  --textback: text;
+}
+
 @media screen and (min-width: 375px) {
   li {
     list-style: none;
@@ -104,15 +108,14 @@
     font-size: 1.4em;
   }
 
-  .first-description .creative {
+  .creative {
     font-size: 2.55em;
     font-weight: 900;
     font-family: 'Paytone One', sans-serif;
     line-height: 38px;
-    background-image: url('img/lines.jpg');
-    background-size: cover;
+    color: #ec5242;
+    background: url('img/lines.jpg');
     -webkit-background-clip: text;
-    background-clip: text;
     -webkit-text-fill-color: transparent;
   }
 
