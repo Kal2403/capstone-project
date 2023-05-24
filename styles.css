@@ -104,7 +104,9 @@
   }
 
   .first-description .hello {
-    display: none;
+    color: #ec5242;
+    font-size: 1.4em;
+    font-weight: 400;
   }
 
   .creative {

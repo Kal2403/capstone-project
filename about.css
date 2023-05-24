@@ -5,6 +5,10 @@
     text-align: center;
   }
 
+  .hello {
+    display: none;
+  }
+
   .second-description .paragraf {
     text-align: center;
     background-color: #fff;
